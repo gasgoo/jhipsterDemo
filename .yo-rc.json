@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.demo",
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "5.4.2",
+    "applicationType": "monolith",
+    "baseName": "jhipsterDemo",
+    "packageName": "com.demo",
+    "packageFolder": "com/demo",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "NzhkZDllMzQ5NDg1ZjVhMTY0NGVhZTI2NGYxNWY0NDMwMzVkMTU0ZGJmY2IyM2NjNGMwNzFkNWNhZjYwNmViMGE2NTVhNjQ4ODg3M2YwZDBiOWQ4ZGUwMGJiYWFkZGU1OWIzNmMzOTkxYTJiODA1NzNhZjg3MDBiNDUzY2U3NmY=",
+    "clientFramework": "react",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "zh-cn",
+    "languages": [
+      "zh-cn"
+    ]
+  }
+}

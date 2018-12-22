@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.security.DomainUserDetailsServiceIntTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-12-22T09:23:53" hostname="LAPTOP-ANBQLHRS" time="0.335">
+  <properties/>
+  <testcase name="assertThatUserCanNotBeFoundByEmailIgnoreCase" classname="com.demo.security.DomainUserDetailsServiceIntTest" time="0.212"/>
+  <testcase name="assertThatEmailIsPrioritizedOverLogin" classname="com.demo.security.DomainUserDetailsServiceIntTest" time="0.029"/>
+  <testcase name="assertThatUserNotActivatedExceptionIsThrownForNotActivatedUsers" classname="com.demo.security.DomainUserDetailsServiceIntTest" time="0.027"/>
+  <testcase name="assertThatUserCanBeFoundByLoginIgnoreCase" classname="com.demo.security.DomainUserDetailsServiceIntTest" time="0.023"/>
+  <testcase name="assertThatUserCanBeFoundByEmail" classname="com.demo.security.DomainUserDetailsServiceIntTest" time="0.021"/>
+  <testcase name="assertThatUserCanBeFoundByLogin" classname="com.demo.security.DomainUserDetailsServiceIntTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

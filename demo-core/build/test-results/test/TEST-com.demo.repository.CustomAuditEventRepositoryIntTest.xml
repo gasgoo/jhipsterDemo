@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.repository.CustomAuditEventRepositoryIntTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-12-22T09:23:53" hostname="LAPTOP-ANBQLHRS" time="0.499">
+  <properties/>
+  <testcase name="testAddEventWithWebAuthenticationDetails" classname="com.demo.repository.CustomAuditEventRepositoryIntTest" time="0.416"/>
+  <testcase name="testAddEventWithNullData" classname="com.demo.repository.CustomAuditEventRepositoryIntTest" time="0.014"/>
+  <testcase name="addAuditEventTruncateLargeData" classname="com.demo.repository.CustomAuditEventRepositoryIntTest" time="0.028"/>
+  <testcase name="addAuditEventWithAuthorizationFailureType" classname="com.demo.repository.CustomAuditEventRepositoryIntTest" time="0.011"/>
+  <testcase name="addAuditEventWithAnonymousUser" classname="com.demo.repository.CustomAuditEventRepositoryIntTest" time="0.012"/>
+  <testcase name="addAuditEvent" classname="com.demo.repository.CustomAuditEventRepositoryIntTest" time="0.012"/>
+  <system-out><![CDATA[
+        ██╗ ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+        ██║ ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+        ██║ ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  ██╗   ██║ ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  ╚██████╔╝ ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+   ╚═════╝  ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+:: JHipster ?  :: Running Spring Boot 2.0.5.RELEASE ::
+:: https://www.jhipster.tech ::
+
+2018-12-22 17:23:19.502  INFO 16740 --- [    Test worker] com.demo.config.MetricsConfiguration     : Initializing Metrics Log reporting
+2018-12-22 17:23:31.549  WARN 16740 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-12-22 17:23:31.581  WARN 16740 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-12-22 17:23:53.265  INFO 16740 --- [    Test worker] com.demo.config.LoggingConfiguration     : Initializing Logstash logging
+2018-12-22 17:23:53.370  INFO 16740 --- [    Test worker] com.demo.config.LoggingConfiguration     : Filtering metrics logs from all appenders except the LOGSTASH appender
+2018-12-22 17:23:53.881  WARN 16740 --- [    Test worker] c.d.r.CustomAuditEventRepository         : Event data for test-key too long (265) has been truncated to 255. Consider increasing column width.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

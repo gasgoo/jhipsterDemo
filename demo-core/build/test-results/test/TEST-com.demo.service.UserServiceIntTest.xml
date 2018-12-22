@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.service.UserServiceIntTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-12-22T09:23:55" hostname="LAPTOP-ANBQLHRS" time="0.352">
+  <properties/>
+  <testcase name="assertThatOnlyActivatedUserCanRequestPasswordReset" classname="com.demo.service.UserServiceIntTest" time="0.036"/>
+  <testcase name="assertThatUserMustExistToResetPassword" classname="com.demo.service.UserServiceIntTest" time="0.014"/>
+  <testcase name="assertThatAnonymousUserIsNotGet" classname="com.demo.service.UserServiceIntTest" time="0.066"/>
+  <testcase name="assertThatResetKeyMustBeValid" classname="com.demo.service.UserServiceIntTest" time="0.018"/>
+  <testcase name="testRemoveNotActivatedUsers" classname="com.demo.service.UserServiceIntTest" time="0.045"/>
+  <testcase name="assertThatUserCanResetPassword" classname="com.demo.service.UserServiceIntTest" time="0.131"/>
+  <testcase name="testFindNotActivatedUsersByCreationDateBefore" classname="com.demo.service.UserServiceIntTest" time="0.019"/>
+  <testcase name="assertThatResetKeyMustNotBeOlderThan24Hours" classname="com.demo.service.UserServiceIntTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

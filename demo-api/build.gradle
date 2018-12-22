@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'idea'
+
+version '1.0.0-SNAPSHOT'
+
+description = "demo-api"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compile ('javax.validation:validation-api:2.0.1.Final')
+    compile ('io.swagger:swagger-annotations:1.5.20')
+    compile ('cn.magfin:common:1.0.0-SNAPSHOT')
+}
