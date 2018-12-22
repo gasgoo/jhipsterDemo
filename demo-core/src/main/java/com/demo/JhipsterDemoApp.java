@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 import javax.annotation.PostConstruct;
 import java.net.InetAddress;
@@ -21,9 +22,10 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.demo"})
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 @EnableDiscoveryClient
+@EnableAsync
 public class JhipsterDemoApp {
 
     private static final Logger log = LoggerFactory.getLogger(JhipsterDemoApp.class);
@@ -64,6 +66,7 @@ public class JhipsterDemoApp {
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);
+        System.out.println("......startup");
     }
 
     private static void logApplicationStartup(Environment env) {
