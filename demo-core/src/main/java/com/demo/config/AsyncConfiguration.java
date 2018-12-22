@@ -39,6 +39,7 @@ public class AsyncConfiguration implements AsyncConfigurer, SchedulingConfigurer
         executor.setMaxPoolSize(jHipsterProperties.getAsync().getMaxPoolSize());
         executor.setQueueCapacity(jHipsterProperties.getAsync().getQueueCapacity());
         executor.setThreadNamePrefix("jhipster-demo-Executor-");
+        executor.setWaitForTasksToCompleteOnShutdown(true);
         return new ExceptionHandlingAsyncTaskExecutor(executor);
     }
 
