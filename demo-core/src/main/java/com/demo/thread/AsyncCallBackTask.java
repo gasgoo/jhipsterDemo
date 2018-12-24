@@ -19,7 +19,7 @@ public class AsyncCallBackTask extends AbstractTask{
         super.doTaskOne();
         return new AsyncResult<>("任务一完成！");
     }
-    @Async
+    @Async()
     public Future<String> doCallTaskTwo() throws InterruptedException {
         System.out.println("当前线程:"+Thread.currentThread().getName()+"执行tas2");
         super.doTaskTwo();

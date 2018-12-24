@@ -3,10 +3,13 @@ package com.demo.web.rest;
 import com.codahale.metrics.annotation.Timed;
 import com.demo.thread.AsyncCallBackTask;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.WebAsyncTask;
+
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @Date 2018/12/24 14:04
@@ -17,6 +20,7 @@ public class WebAsyncResource {
 
     @Autowired
     private AsyncCallBackTask asyncCallBackTask;
+
 
     @GetMapping("/completion")
     @Timed
@@ -42,5 +46,6 @@ public class WebAsyncResource {
         }
         return asyncTask;
     }
+
 
 }

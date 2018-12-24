@@ -1,6 +1,7 @@
 package com.demo;
 
 import com.demo.config.ApplicationProperties;
+import com.demo.config.AsyncConfiguration;
 import com.demo.config.DefaultProfileUtil;
 
 import io.github.jhipster.config.JHipsterConstants;

@@ -108,6 +108,10 @@ server:
 # ===================================================================
 
 jhipster:
+    async:
+        core-pool-size: 5
+        max-pool-size: 50
+        queue-capacity: 10000
     http:
         version: V_1_1 # To use HTTP/2 you will need to activate TLS (see application-tls.yml)
     cache: # Cache configuration
@@ -145,6 +149,7 @@ jhipster:
             host: localhost
             port: 5000
             queue-size: 512
+
 
 # ===================================================================
 # Application specific properties
