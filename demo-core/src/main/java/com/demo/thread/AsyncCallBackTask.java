@@ -4,6 +4,7 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
 import java.util.concurrent.Future;
 
 /**
@@ -30,6 +31,10 @@ public class AsyncCallBackTask extends AbstractTask{
         System.out.println("当前线程:"+Thread.currentThread().getName()+"执行tas3");
         super.doTaskThree();
         return new AsyncResult<>("任务二完成！");
+    }
+
+    public String generId(){
+        return UUID.randomUUID().toString();
     }
 
 }
