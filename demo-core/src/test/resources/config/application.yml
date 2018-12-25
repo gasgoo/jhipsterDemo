@@ -64,6 +64,7 @@ spring:
             properties:
                 path:
                     home: build/elasticsearch
+
     liquibase:
         contexts: test
     mail:
@@ -75,6 +76,12 @@ spring:
             enabled: false
     thymeleaf:
         mode: HTML
+    redis:
+        host: 192.168.1.9
+        port: 6379
+        password: magfin2018
+        # Redis数据库索引（默认为0)
+        database: 5
 
 
 server:

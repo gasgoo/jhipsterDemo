@@ -16,9 +16,10 @@ import org.springframework.data.elasticsearch.core.EntityMapper;
 import org.springframework.data.elasticsearch.core.convert.ElasticsearchConverter;
 import org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchMappingContext;
 
+import javax.annotation.PostConstruct;
 import java.io.IOException;
 
-//@Configuration
+@Configuration
 @EnableConfigurationProperties(ElasticsearchProperties.class)
 public class ElasticsearchConfiguration {
 
@@ -26,6 +27,12 @@ public class ElasticsearchConfiguration {
 
     public ElasticsearchConfiguration(ObjectMapper mapper) {
         this.mapper = mapper;
+    }
+
+    //初始化 过滤netty防止redis冲突
+    @PostConstruct
+    void init() {
+        System.setProperty("es.set.netty.runtime.available.processors", "false");
     }
 
     @Bean
